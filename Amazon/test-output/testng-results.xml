@@ -1,113 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
+<testng-results total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-19T13:09:28 IST" name="RegressionSuite" finished-at="2024-10-19T13:09:28 IST" duration-ms="77">
+  <suite started-at="2024-11-13T03:16:39Z" name="Suite" finished-at="2024-11-13T03:18:28Z" duration-ms="109231">
     <groups>
     </groups>
-    <test started-at="2024-10-19T13:09:28 IST" name="ChromeTest" finished-at="2024-10-19T13:09:28 IST" duration-ms="77">
+    <test started-at="2024-11-13T03:16:39Z" name="chromeTest" finished-at="2024-11-13T03:18:28Z" duration-ms="109231">
       <class name="test.Test_2">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="beforeClass" finished-at="2024-10-19T13:09:28 IST" duration-ms="6" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-at test.Test_2.beforeClass(Test_2.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:46:39Z" name="beforeTest" finished-at="2024-11-13T08:46:44Z" duration-ms="4976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:46:44Z" name="beforeClass" finished-at="2024-11-13T08:46:46Z" duration-ms="1598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1729323568600" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:46:46Z" name="beforeMethod" finished-at="2024-11-13T08:46:58Z" duration-ms="11878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="signInverify()[pri:0, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="signInverify" finished-at="2024-10-19T13:09:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-at test.Test_2.beforeClass(Test_2.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="signInverify()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:46:58Z" name="signInverify" finished-at="2024-11-13T08:47:31Z" duration-ms="33740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInverify -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1729323568610" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:47:31Z" name="afterMethod" finished-at="2024-11-13T08:47:33Z" duration-ms="1890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="orderVerifyWatch()[pri:6, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="orderVerifyWatch" finished-at="2024-10-19T13:09:28 IST" depends-on-methods="test.Test_2.signInverify" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Test_2.orderVerifyWatch()[pri:6, instance:test.Test_2@478190fc] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Test_2.orderVerifyWatch()[pri:6, instance:test.Test_2@478190fc] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:47:33Z" name="beforeMethod" finished-at="2024-11-13T08:47:44Z" duration-ms="11115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="orderVerifyWatch()[pri:6, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:47:44Z" name="orderVerifyWatch" finished-at="2024-11-13T08:47:49Z" depends-on-methods="test.Test_2.signInverify" duration-ms="4981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderVerifyWatch -->
-        <test-method signature="orderVerifyMobile()[pri:8, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="orderVerifyMobile" finished-at="2024-10-19T13:09:28 IST" depends-on-methods="test.Test_2.signInverify, test.Test_2.orderVerifyWatch" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:47:49Z" name="afterMethod" finished-at="2024-11-13T08:47:51Z" duration-ms="1770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:47:51Z" name="beforeMethod" finished-at="2024-11-13T08:48:04Z" duration-ms="12715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="orderVerifyMobile()[pri:8, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:48:04Z" name="orderVerifyMobile" finished-at="2024-11-13T08:48:26Z" depends-on-methods="test.Test_2.signInverify, test.Test_2.orderVerifyWatch" duration-ms="22512" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Method Test_2.orderVerifyMobile()[pri:8, instance:test.Test_2@478190fc] depends on not successfully finished methods]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')]"}
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aac13b37591b049b8c1320b6dd516de1, findElement {value=//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\bobad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54028/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aac13b37591b049b8c1320b6dd516de1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Test_2.orderVerifyMobile()[pri:8, instance:test.Test_2@478190fc] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')]"}
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aac13b37591b049b8c1320b6dd516de1, findElement {value=//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\bobad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54028/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aac13b37591b049b8c1320b6dd516de1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at page.Orderpage.verifymobileorder(Orderpage.java:40)
+	at test.Test_2.orderVerifyMobile(Test_2.java:126)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderVerifyMobile -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1729323568625" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:48:26Z" name="afterMethod" finished-at="2024-11-13T08:48:28Z" duration-ms="1802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:48:28Z" name="afterTest" finished-at="2024-11-13T08:48:28Z" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- test.Test_2 -->
-    </test> <!-- ChromeTest -->
-  </suite> <!-- RegressionSuite -->
+    </test> <!-- chromeTest -->
+  </suite> <!-- Suite -->
 </testng-results>
