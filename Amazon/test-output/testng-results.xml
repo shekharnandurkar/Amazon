@@ -2,12 +2,12 @@
 <testng-results total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-13T03:16:39Z" name="Suite" finished-at="2024-11-13T03:18:28Z" duration-ms="109231">
+  <suite started-at="2024-11-20T09:32:41Z" name="Suite" finished-at="2024-11-20T09:34:39Z" duration-ms="117584">
     <groups>
     </groups>
-    <test started-at="2024-11-13T03:16:39Z" name="chromeTest" finished-at="2024-11-13T03:18:28Z" duration-ms="109231">
+    <test started-at="2024-11-20T09:32:41Z" name="chromeTest" finished-at="2024-11-20T09:34:39Z" duration-ms="117584">
       <class name="test.Test_2">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:46:39Z" name="beforeTest" finished-at="2024-11-13T08:46:44Z" duration-ms="4976" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:02:41Z" name="beforeTest" finished-at="2024-11-20T15:02:48Z" duration-ms="7199" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,61 +18,61 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:46:44Z" name="beforeClass" finished-at="2024-11-13T08:46:46Z" duration-ms="1598" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:02:48Z" name="beforeClass" finished-at="2024-11-20T15:02:50Z" duration-ms="1753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:46:46Z" name="beforeMethod" finished-at="2024-11-13T08:46:58Z" duration-ms="11878" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:02:50Z" name="beforeMethod" finished-at="2024-11-20T15:03:07Z" duration-ms="17225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="signInverify()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:46:58Z" name="signInverify" finished-at="2024-11-13T08:47:31Z" duration-ms="33740" status="PASS">
+        <test-method signature="signInverify()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:03:07Z" name="signInverify" finished-at="2024-11-20T15:03:39Z" duration-ms="31362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInverify -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:47:31Z" name="afterMethod" finished-at="2024-11-13T08:47:33Z" duration-ms="1890" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:03:39Z" name="afterMethod" finished-at="2024-11-20T15:03:41Z" duration-ms="2283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:47:33Z" name="beforeMethod" finished-at="2024-11-13T08:47:44Z" duration-ms="11115" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:03:41Z" name="beforeMethod" finished-at="2024-11-20T15:03:52Z" duration-ms="11055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="orderVerifyWatch()[pri:6, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:47:44Z" name="orderVerifyWatch" finished-at="2024-11-13T08:47:49Z" depends-on-methods="test.Test_2.signInverify" duration-ms="4981" status="PASS">
+        <test-method signature="orderVerifyWatch()[pri:6, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:03:52Z" name="orderVerifyWatch" finished-at="2024-11-20T15:03:58Z" depends-on-methods="test.Test_2.signInverify" duration-ms="5749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderVerifyWatch -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:47:49Z" name="afterMethod" finished-at="2024-11-13T08:47:51Z" duration-ms="1770" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:03:58Z" name="afterMethod" finished-at="2024-11-20T15:03:59Z" duration-ms="1555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:47:51Z" name="beforeMethod" finished-at="2024-11-13T08:48:04Z" duration-ms="12715" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:03:59Z" name="beforeMethod" finished-at="2024-11-20T15:04:11Z" duration-ms="11694" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="orderVerifyMobile()[pri:8, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:48:04Z" name="orderVerifyMobile" finished-at="2024-11-13T08:48:26Z" depends-on-methods="test.Test_2.signInverify, test.Test_2.orderVerifyWatch" duration-ms="22512" status="FAIL">
+        <test-method signature="orderVerifyMobile()[pri:8, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:04:11Z" name="orderVerifyMobile" finished-at="2024-11-20T15:04:36Z" depends-on-methods="test.Test_2.signInverify, test.Test_2.orderVerifyWatch" duration-ms="24843" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')]"}
-  (Session info: chrome=130.0.6723.117)
+  (Session info: chrome=131.0.6778.70)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aac13b37591b049b8c1320b6dd516de1, findElement {value=//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\bobad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54028/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aac13b37591b049b8c1320b6dd516de1]]>
+Command: [713b301401c4a20e20cdca97286bf0c0, findElement {using=xpath, value=//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\bobad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49247}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49247/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 713b301401c4a20e20cdca97286bf0c0]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')]"}
-  (Session info: chrome=130.0.6723.117)
+  (Session info: chrome=131.0.6778.70)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aac13b37591b049b8c1320b6dd516de1, findElement {value=//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\bobad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54028/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aac13b37591b049b8c1320b6dd516de1
+Command: [713b301401c4a20e20cdca97286bf0c0, findElement {using=xpath, value=//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\bobad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49247}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49247/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 713b301401c4a20e20cdca97286bf0c0
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -108,11 +108,11 @@ Session ID: aac13b37591b049b8c1320b6dd516de1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderVerifyMobile -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:48:26Z" name="afterMethod" finished-at="2024-11-13T08:48:28Z" duration-ms="1802" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:04:36Z" name="afterMethod" finished-at="2024-11-20T15:04:38Z" duration-ms="2141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-13T08:48:28Z" name="afterTest" finished-at="2024-11-13T08:48:28Z" duration-ms="231" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:04:38Z" name="afterTest" finished-at="2024-11-20T15:04:39Z" duration-ms="691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
