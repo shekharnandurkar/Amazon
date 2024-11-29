@@ -88,7 +88,7 @@ public class Test_2 extends Browse_Pojo{
 		
 		signinpage.sendemail(Utility.getDatafromExcel(4, 0));
 		signinpage.clickContinuee();
-		Thread.sleep(10000);		
+		Thread.sleep(1000);		
 		signinpage.sendpassword(Utility.getDatafromExcel(4, 1));
 		signinpage.clicksigninsubmit();
 	}
@@ -98,7 +98,7 @@ public class Test_2 extends Browse_Pojo{
 		driver.manage().window().maximize();
 	String expected ="https://www.amazon.in/?ref_=nav_ya_signin";
 	//String expected="ddd";
-	Thread.sleep(30000);
+	//Thread.sleep(30000);
 	String actual=driver.getCurrentUrl();
 	//SoftAssert softAssert=new SoftAssert(); 
 	Assert.assertEquals(actual, expected);
@@ -115,7 +115,7 @@ public class Test_2 extends Browse_Pojo{
 		Utility.captureScreenshot(driver,a);
 	}
 	}                                                                                //3000
-	@Test (priority=8,dependsOnMethods= {"signInverify","orderVerifyWatch"},timeOut=120000)
+	@Test (priority=8,dependsOnMethods= {"signInverify","orderVerifyWatch"},timeOut=1000)
 	void orderVerifyMobile() throws InterruptedException, EncryptedDocumentException, FileNotFoundException, IOException {
 		
 		homepage.clickOrders();

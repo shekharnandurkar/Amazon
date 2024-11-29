@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="2" failed="1" skipped="0">
+<testng-results total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-20T09:32:41Z" name="Suite" finished-at="2024-11-20T09:34:39Z" duration-ms="117584">
+  <suite started-at="2024-11-28T08:00:07Z" name="Suite" finished-at="2024-11-28T08:01:10Z" duration-ms="62189">
     <groups>
     </groups>
-    <test started-at="2024-11-20T09:32:41Z" name="chromeTest" finished-at="2024-11-20T09:34:39Z" duration-ms="117584">
+    <test started-at="2024-11-28T08:00:07Z" name="chromeTest" finished-at="2024-11-28T08:01:10Z" duration-ms="62189">
       <class name="test.Test_2">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:02:41Z" name="beforeTest" finished-at="2024-11-20T15:02:48Z" duration-ms="7199" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-28T13:30:07Z" name="beforeTest" finished-at="2024-11-28T13:30:07Z" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -15,64 +15,26 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:02:48Z" name="beforeClass" finished-at="2024-11-20T15:02:50Z" duration-ms="1753" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:02:50Z" name="beforeMethod" finished-at="2024-11-20T15:03:07Z" duration-ms="17225" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="signInverify()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:03:07Z" name="signInverify" finished-at="2024-11-20T15:03:39Z" duration-ms="31362" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signInverify -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:03:39Z" name="afterMethod" finished-at="2024-11-20T15:03:41Z" duration-ms="2283" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:03:41Z" name="beforeMethod" finished-at="2024-11-20T15:03:52Z" duration-ms="11055" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="orderVerifyWatch()[pri:6, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:03:52Z" name="orderVerifyWatch" finished-at="2024-11-20T15:03:58Z" depends-on-methods="test.Test_2.signInverify" duration-ms="5749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderVerifyWatch -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:03:58Z" name="afterMethod" finished-at="2024-11-20T15:03:59Z" duration-ms="1555" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:03:59Z" name="beforeMethod" finished-at="2024-11-20T15:04:11Z" duration-ms="11694" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="orderVerifyMobile()[pri:8, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:04:11Z" name="orderVerifyMobile" finished-at="2024-11-20T15:04:36Z" depends-on-methods="test.Test_2.signInverify, test.Test_2.orderVerifyWatch" duration-ms="24843" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')]"}
-  (Session info: chrome=131.0.6778.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[target frame detached: received Inspector.detached event
+  (Session info: chrome=131.0.6778.86)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [713b301401c4a20e20cdca97286bf0c0, findElement {using=xpath, value=//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\bobad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49247}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49247/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 713b301401c4a20e20cdca97286bf0c0]]>
+Command: [c03309d5442f92887237cfe65c7eb3ea, get {url=https://www.amazon.in/ }]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\bobad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60617}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60617/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c03309d5442f92887237cfe65c7eb3ea]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')]"}
-  (Session info: chrome=131.0.6778.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.WebDriverException: target frame detached: received Inspector.detached event
+  (Session info: chrome=131.0.6778.86)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [713b301401c4a20e20cdca97286bf0c0, findElement {using=xpath, value=//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\bobad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49247}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49247/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 713b301401c4a20e20cdca97286bf0c0
+Command: [c03309d5442f92887237cfe65c7eb3ea, get {url=https://www.amazon.in/ }]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\bobad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60617}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60617/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c03309d5442f92887237cfe65c7eb3ea
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -83,36 +45,99 @@ Session ID: 713b301401c4a20e20cdca97286bf0c0
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
-	at page.Orderpage.verifymobileorder(Orderpage.java:40)
-	at test.Test_2.orderVerifyMobile(Test_2.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at test.Test_2.beforeTest(Test_2.java:70)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
-	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1570)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- orderVerifyMobile -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:04:36Z" name="afterMethod" finished-at="2024-11-20T15:04:38Z" duration-ms="2141" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-28T13:31:10Z" name="beforeClass" finished-at="2024-11-28T13:31:10Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-28T13:31:10Z" name="beforeMethod" finished-at="2024-11-28T13:31:10Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="signInverify()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-28T13:31:10Z" name="signInverify" finished-at="2024-11-28T13:31:10Z" duration-ms="3" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInverify -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-28T13:31:10Z" name="afterMethod" finished-at="2024-11-28T13:31:10Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-20T15:04:38Z" name="afterTest" finished-at="2024-11-20T15:04:39Z" duration-ms="691" status="PASS">
+        <test-method signature="orderVerifyWatch()[pri:6, instance:test.Test_2@7d900ecf]" started-at="2024-11-28T13:31:10Z" name="orderVerifyWatch" finished-at="2024-11-28T13:31:10Z" depends-on-methods="test.Test_2.signInverify" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test_2.orderVerifyWatch()[pri:6, instance:test.Test_2@7d900ecf] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test_2.orderVerifyWatch()[pri:6, instance:test.Test_2@7d900ecf] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderVerifyWatch -->
+        <test-method signature="orderVerifyMobile()[pri:8, instance:test.Test_2@7d900ecf]" started-at="2024-11-28T13:31:10Z" name="orderVerifyMobile" finished-at="2024-11-28T13:31:10Z" depends-on-methods="test.Test_2.signInverify, test.Test_2.orderVerifyWatch" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test_2.orderVerifyMobile()[pri:8, instance:test.Test_2@7d900ecf] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test_2.orderVerifyMobile()[pri:8, instance:test.Test_2@7d900ecf] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderVerifyMobile -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-11-28T13:31:10Z" name="afterTest" finished-at="2024-11-28T13:31:10Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

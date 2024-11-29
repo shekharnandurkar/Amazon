@@ -13,7 +13,7 @@ public class Orderpage {
 	@FindBy (xpath="//a[contains(text(),'   2023')]")
 	private WebElement orderyear;
 	
-	@FindBy (xpath="//a[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')]")
+	@FindBy (xpath="//div[contains(text(),'realme narzo 60 5G (Mars Orange,8GB+128GB)')]")
 	private WebElement mobileorder;
 	
 
