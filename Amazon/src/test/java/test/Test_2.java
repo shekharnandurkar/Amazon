@@ -38,8 +38,7 @@ public class Test_2 extends Browse_Pojo{
 	private SignIn_page signinpage;
 	private Orderpage orderpage;
 	private SoftAssert softassert;
-	String a="vaibhav";
-	String expected;
+	
 	
 
 	@Parameters("Browser")
