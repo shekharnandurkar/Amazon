@@ -16,7 +16,11 @@
           <include name="orderVerifyMobile"/>
           <include name="signInverify"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="orderVerifyWatch"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
         </methods>
       </class> <!-- test.Test_2 -->
     </classes>

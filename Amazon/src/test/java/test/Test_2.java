@@ -40,6 +40,7 @@ public class Test_2 extends Browse_Pojo{
 	private SoftAssert softassert;
 	
 	
+	
 
 	@Parameters("Browser")
      @BeforeTest
@@ -111,10 +112,10 @@ public class Test_2 extends Browse_Pojo{
 		Utility.captureScreenshot(driver,"T101");
 	}
 	else {
-		Utility.captureScreenshot(driver,a);
+		Utility.captureScreenshot(driver,"a");
 	}
-	}                                                                                //3000
-	@Test (priority=8,dependsOnMethods= {"signInverify","orderVerifyWatch"},timeOut=1000)
+	}                                                                                //timeOut=3000
+	@Test (priority=8,dependsOnMethods= {"signInverify","orderVerifyWatch"})
 	void orderVerifyMobile() throws InterruptedException, EncryptedDocumentException, FileNotFoundException, IOException {
 		
 		homepage.clickOrders();
@@ -164,7 +165,7 @@ public class Test_2 extends Browse_Pojo{
 	
 	void afterMethod() throws IOException {
 	//	System.out.println(actual);
-		System.out.println(expected);
+		//System.out.println(expected);
 		
 		homepage.clickOnlogout();
 	}
