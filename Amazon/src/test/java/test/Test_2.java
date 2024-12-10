@@ -38,8 +38,9 @@ public class Test_2 extends Browse_Pojo{
 	private SignIn_page signinpage;
 	private Orderpage orderpage;
 	private SoftAssert softassert;
-	String actual;
-	String expected;
+	
+	
+	
 	
 
 	@Parameters("Browser")
@@ -83,22 +84,22 @@ public class Test_2 extends Browse_Pojo{
 		
 	}
 	@BeforeMethod
-	void beforeMethod() throws EncryptedDocumentException, IOException {
-	
-	
-		signinpage.sendemail("vbobade79@gmail.com");
-		signinpage.clickContinuee();
+	void beforeMethod() throws EncryptedDocumentException, IOException, InterruptedException {
 		
-		signinpage.sendpassword(Utility.getDatafromExcel(4,1));
+		
+		signinpage.sendemail(Utility.getDatafromExcel(4, 0));
+		signinpage.clickContinuee();
+		Thread.sleep(1000);		
+		signinpage.sendpassword(Utility.getDatafromExcel(4, 1));
 		signinpage.clicksigninsubmit();
 	}
 	
 	@Test (priority=0)
-	void signInverify() throws InterruptedException { 
+	void signInverify() throws InterruptedException, IOException { 
 		driver.manage().window().maximize();
-	//String expected ="https://www.amazon.in/?ref_=nav_ya_signin";
-	String expected="ddd";
-	Thread.sleep(30000);
+	String expected ="https://www.amazon.in/?ref_=nav_ya_signin";
+	//String expected="ddd";
+	//Thread.sleep(30000);
 	String actual=driver.getCurrentUrl();
 	//SoftAssert softAssert=new SoftAssert(); 
 	Assert.assertEquals(actual, expected);
@@ -107,8 +108,15 @@ public class Test_2 extends Browse_Pojo{
 	//softassert.assertAll();
 	System.out.println(actual);
 	System.out.println(expected);
-	}                                                                                //3000
-	@Test (priority=8,dependsOnMethods= {"signInverify","orderVerifyWatch"},timeOut=120000)
+	if(actual.equals(expected))
+	{
+		Utility.captureScreenshot(driver,"T101");
+	}
+	else {
+		Utility.captureScreenshot(driver,"a");
+	}
+	}                                                                                //timeOut=3000
+	@Test (priority=8,dependsOnMethods= {"signInverify","orderVerifyWatch"})
 	void orderVerifyMobile() throws InterruptedException, EncryptedDocumentException, FileNotFoundException, IOException {
 		
 		homepage.clickOrders();
@@ -121,11 +129,15 @@ public class Test_2 extends Browse_Pojo{
 		Assert.assertEquals(actual,expected);
 		System.out.println(actual);
 		System.out.println(expected);
+		if(actual.equals(expected))
+		{
+			Utility.captureScreenshot(driver,"T102");
+		}
 		
 	}
 	
 	@Test (priority=6,dependsOnMethods={"signInverify"})  //  dependsOnMethods is more power > priority 
-	void orderVerifyWatch() {
+	void orderVerifyWatch() throws IOException {
 		
 		homepage.clickOrders();
 		orderpage.clickonOrder();
@@ -144,32 +156,30 @@ public class Test_2 extends Browse_Pojo{
 		softassert.assertAll();
 		System.out.println(actual);
 		System.out.println(expected);
+		if(actual.equals(expected))
+		{
+			Utility.captureScreenshot(driver,"T103");
+		}
 		
 	}
 	@AfterMethod  
 	
 	void afterMethod() throws IOException {
-		System.out.println(actual);
-		System.out.println(expected);
-		if(actual.equals(expected))
-		{
-			Utility.captureScreenshot(driver);
-		}
-		else {
-			Utility.captureScreenshot(driver);
-		}
+	//	System.out.println(actual);
+		//System.out.println(expected);
+		
 		homepage.clickOnlogout();
 	}
-  //  @AfterClass
-  //  void afterClass() {
-    	//homepage=null;
-		//signinpage =null;
-		//softassert=null;
-		//orderpage=null;
-		//System.gc();// garbage removed jinke koi reference mai value null hai use removed kr dete hai
-		
-    	
- //   } 
+//    @AfterClass
+//   void afterClass() {
+//    homepage=null;
+//signinpage =null;
+//		softassert=null;
+//		orderpage=null;
+//	System.gc();// garbage removed jinke koi reference mai value null hai use removed kr dete hai
+//		
+//    	
+//    } 
     @AfterTest
     void afterTest() {
     	driver.close();
