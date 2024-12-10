@@ -1,113 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
+<testng-results total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-19T13:09:28 IST" name="RegressionSuite" finished-at="2024-10-19T13:09:28 IST" duration-ms="77">
+  <suite started-at="2024-12-09T04:46:57Z" name="Suite" finished-at="2024-12-09T04:48:35Z" duration-ms="97939">
     <groups>
     </groups>
-    <test started-at="2024-10-19T13:09:28 IST" name="ChromeTest" finished-at="2024-10-19T13:09:28 IST" duration-ms="77">
+    <test started-at="2024-12-09T04:46:57Z" name="chromeTest" finished-at="2024-12-09T04:48:35Z" duration-ms="97939">
       <class name="test.Test_2">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="beforeClass" finished-at="2024-10-19T13:09:28 IST" duration-ms="6" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-at test.Test_2.beforeClass(Test_2.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-12-09T10:16:58Z" name="beforeTest" finished-at="2024-12-09T10:17:28Z" duration-ms="30253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-12-09T10:17:28Z" name="beforeClass" finished-at="2024-12-09T10:17:31Z" duration-ms="3018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1729323568600" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-12-09T10:17:31Z" name="beforeMethod" finished-at="2024-12-09T10:17:38Z" duration-ms="7016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="signInverify()[pri:0, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="signInverify" finished-at="2024-10-19T13:09:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-at test.Test_2.beforeClass(Test_2.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="signInverify()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-12-09T10:17:38Z" name="signInverify" finished-at="2024-12-09T10:17:50Z" duration-ms="12370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInverify -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1729323568610" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-12-09T10:17:50Z" name="afterMethod" finished-at="2024-12-09T10:18:01Z" duration-ms="10542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="orderVerifyWatch()[pri:6, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="orderVerifyWatch" finished-at="2024-10-19T13:09:28 IST" depends-on-methods="test.Test_2.signInverify" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Test_2.orderVerifyWatch()[pri:6, instance:test.Test_2@478190fc] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Test_2.orderVerifyWatch()[pri:6, instance:test.Test_2@478190fc] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-12-09T10:18:01Z" name="beforeMethod" finished-at="2024-12-09T10:18:07Z" duration-ms="6134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="orderVerifyWatch()[pri:6, instance:test.Test_2@7d900ecf]" started-at="2024-12-09T10:18:07Z" name="orderVerifyWatch" finished-at="2024-12-09T10:18:21Z" depends-on-methods="test.Test_2.signInverify" duration-ms="14161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderVerifyWatch -->
-        <test-method signature="orderVerifyMobile()[pri:8, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="orderVerifyMobile" finished-at="2024-10-19T13:09:28 IST" depends-on-methods="test.Test_2.signInverify, test.Test_2.orderVerifyWatch" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-12-09T10:18:21Z" name="afterMethod" finished-at="2024-12-09T10:18:25Z" duration-ms="4162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-12-09T10:18:25Z" name="beforeMethod" finished-at="2024-12-09T10:18:29Z" duration-ms="3715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="orderVerifyMobile()[pri:8, instance:test.Test_2@7d900ecf]" started-at="2024-12-09T10:18:29Z" name="orderVerifyMobile" finished-at="2024-12-09T10:18:30Z" depends-on-methods="test.Test_2.signInverify, test.Test_2.orderVerifyWatch" duration-ms="1019" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
             <message>
-              <![CDATA[Method Test_2.orderVerifyMobile()[pri:8, instance:test.Test_2@478190fc] depends on not successfully finished methods]]>
+              <![CDATA[Method org.testng.internal.TestNGMethod.orderVerifyMobile() didn't finish within the time-out 1000]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Test_2.orderVerifyMobile()[pri:8, instance:test.Test_2@478190fc] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.orderVerifyMobile() didn't finish within the time-out 1000
+	at java.base/java.lang.Throwable.fillInStackTrace(Native Method)
+	at java.base/java.lang.Throwable.fillInStackTrace(Throwable.java:842)
+	at java.base/java.lang.Throwable.<init>(Throwable.java:307)
+	at java.base/java.lang.Exception.<init>(Exception.java:85)
+	at java.base/java.lang.RuntimeException.<init>(RuntimeException.java:81)
+	at org.openqa.selenium.WebDriverException.<init>(WebDriverException.java:49)
+	at org.openqa.selenium.remote.UnreachableBrowserException.<init>(UnreachableBrowserException.java:42)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:546)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:259)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:208)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:194)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:611)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
+	at java.base/java.util.Map.forEach(Map.java:733)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
+	at org.openqa.selenium.json.Json.toJson(Json.java:133)
+	at org.openqa.selenium.json.Json.toJson(Json.java:119)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:245)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:111)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:178)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:605)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:568)
+	at page.HomePage.clickOrders(HomePage.java:51)
+	at test.Test_2.orderVerifyMobile(Test_2.java:121)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderVerifyMobile -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.Test_2@478190fc]" started-at="2024-10-19T13:09:28 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1729323568625" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-12-09T10:18:30Z" name="afterMethod" finished-at="2024-12-09T10:18:35Z" duration-ms="5339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:test.Test_2@7d900ecf]" started-at="2024-12-09T10:18:35Z" name="afterTest" finished-at="2024-12-09T10:18:35Z" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- test.Test_2 -->
-    </test> <!-- ChromeTest -->
-  </suite> <!-- RegressionSuite -->
+    </test> <!-- chromeTest -->
+  </suite> <!-- Suite -->
 </testng-results>

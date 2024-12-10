@@ -24,8 +24,8 @@ public class SignIn_page {
 		PageFactory.initElements(driver, this);
 	} 
 	
-	 public void sendemail(String emai) {
-		 email.sendKeys(emai);
+	 public void sendemail(String a) {
+		 email.sendKeys(a);
 	 }
 	 public void clickContinuee() {
 		 continuee.click();
