@@ -11,11 +11,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeMethod; 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -38,6 +39,7 @@ public class Test_2 extends Browse_Pojo{
 	private SignIn_page signinpage;
 	private Orderpage orderpage;
 	private SoftAssert softassert;
+	private String TestId;
 	
 	
 	
@@ -96,6 +98,7 @@ public class Test_2 extends Browse_Pojo{
 	
 	@Test (priority=0)
 	void signInverify() throws InterruptedException, IOException { 
+		TestId ="T101";
 		driver.manage().window().maximize();
 	String expected ="https://www.amazon.in/?ref_=nav_ya_signin";
 	//String expected="ddd";
@@ -108,37 +111,28 @@ public class Test_2 extends Browse_Pojo{
 	//softassert.assertAll();
 	System.out.println(actual);
 	System.out.println(expected);
-	if(actual.equals(expected))
-	{
-		Utility.captureScreenshot(driver,"T101");
-	}
-	else {
-		Utility.captureScreenshot(driver,"a");
-	}
+	
 	}                                                                                //timeOut=3000
 	@Test (priority=8,dependsOnMethods= {"signInverify","orderVerifyWatch"})
 	void orderVerifyMobile() throws InterruptedException, EncryptedDocumentException, FileNotFoundException, IOException {
-		
+		TestId="T102";
 		homepage.clickOrders();
 		orderpage.clickonOrder();
 		
 		//String expected=WorkbookFactory.create(new FileInputStream("C:\\Users\\bobad\\Desktop\\Test Data.xlsx")).getSheet("xpath WebElement").getRow(3).getCell(2).getStringCellValue();
 	   
 		String actual=orderpage.verifymobileorder();
-		String expected="realme narzo 60 5G (Mars Orange,8GB+128GB) 90Hz Super AMOLED Display | Ultra Premium Vegan Leather Design | with 33W SUPERVOOC Charger";
+		String expected="realme narzo 60(Mars Orange,8GB+128GB) 90Hz Super AMOLED Display | Ultra Premium Vegan Leather Design | with 33W SUPERVOOC Charger";
 		Assert.assertEquals(actual,expected);
 		System.out.println(actual);
 		System.out.println(expected);
-		if(actual.equals(expected))
-		{
-			Utility.captureScreenshot(driver,"T102");
-		}
+		
 		
 	}
 	
 	@Test (priority=6,dependsOnMethods={"signInverify"})  //  dependsOnMethods is more power > priority 
 	void orderVerifyWatch() throws IOException {
-		
+		TestId="T103";
 		homepage.clickOrders();
 		orderpage.clickonOrder();
 		 
@@ -156,15 +150,18 @@ public class Test_2 extends Browse_Pojo{
 		softassert.assertAll();
 		System.out.println(actual);
 		System.out.println(expected);
-		if(actual.equals(expected))
-		{
-			Utility.captureScreenshot(driver,"T103");
-		}
+		
 		
 	}
 	@AfterMethod  
 	
-	void afterMethod() throws IOException {
+	void captureScreenshotITestFail(ITestResult result) throws IOException {
+		if(ITestResult.FAILURE==result.getStatus())
+		{
+			
+				Utility.captureScreenshot(driver,TestId);
+		
+		}
 	//	System.out.println(actual);
 		//System.out.println(expected);
 		
